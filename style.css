@@ -1,0 +1,140 @@
+/* Apply a global reset to remove default margins and paddings */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+/* Style the body with a centered flex layout and a background color */
+body{
+    background-color: #35155d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the form, styled with a light gray background and a shadow effect */
+.container{
+    width: 360px;
+    height: 400px;
+    background-color: lightgray;
+    margin: 8% auto;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Style the heading inside the container */
+h3{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #777;
+}
+
+/* Form styling, positioned absolutely for step transitions */
+.container form{
+    width: 280px;
+    /* Initially planned for background testing */
+    /* background-color: red; */
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    transition: 500ms all;
+}
+
+/* Input field styles */
+form input {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0px;
+    border: 0px;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background-color: transparent;
+}
+
+/* Placeholder styling */
+::placeholder{
+    color: #777;
+}
+
+/* Container for buttons, centered in the form */
+.btn-box{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+/* Button styles with a gradient background */
+.btn-box button{
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    border-radius: 30px;
+    border: 0;
+    background: linear-gradient(to right, #35155d, #512b81);
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/* Positioning of second and third forms to be initially off-screen */
+#form2{
+    left: 450px;
+}
+
+#form3{
+    left: 450px;
+}
+
+/* Step indicator row with shadow effect */
+.step-row{
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #000;
+    /* Learn how to use box-shadow and width/height with rem for better responsive design */
+    position: relative;
+}
+
+/* Individual step indicator column */
+.step-col{
+    width: 120px;
+    color: #333;
+    text-align: center;
+    position: relative;
+}
+
+/* Progress bar styling, initially covering only one step */
+#progress{
+    position: absolute;
+    height: 100%;
+    width: 120px;
+    background: linear-gradient(to right,#512b81,#512b81);
+}
+
+/* Small text styling inside the step indicators */
+small{
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* Arrow indicator for progress bar */
+#progress::after{
+    content: "";
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    border-left: 20px solid #512b81;
+}
