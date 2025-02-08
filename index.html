@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Step Form</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linking external CSS file -->
+</head>
+<body>
+    
+    <div class="container"> <!-- Main container for the multi-step form -->
+        
+        <!-- Step 1: Account Creation Form -->
+        <form id="form1">
+            <h3>Create Account</h3>
+            <input type="text" placeholder="Username"> <!-- Username input field -->
+            <input type="password" placeholder="Password"> <!-- Password input field -->
+            <input type="password" placeholder="Confirm Password"> <!-- Confirm Password input field -->
+
+            <div class="btn-box"> <!-- Button container -->
+                <button type="button" id="next1">Next</button> <!-- Button to go to Step 2 -->
+            </div>
+        </form>
+
+        <!-- Step 2: Additional Information Form -->
+        <form id="form2">
+            <h3>Additional Information</h3>
+            <input type="text" placeholder="E-Mail"> <!-- Email input field -->
+            <input type="text" placeholder="LinkedIn"> <!-- LinkedIn profile input field -->
+            <input type="text" placeholder="GitHub"> <!-- GitHub profile input field -->
+
+            <div class="btn-box"> <!-- Button container -->
+                <button type="button" id="back1">Back</button> <!-- Button to go back to Step 1 -->
+                <button type="button" id="next2">Next</button> <!-- Button to go to Step 3 -->
+            </div>
+        </form>
+
+        <!-- Step 3: Personal Details Form -->
+        <form id="form3">
+            <h3>Personal Details</h3>
+            <input type="text" placeholder="First Name"> <!-- First Name input field -->
+            <input type="text" placeholder="Last Name"> <!-- Last Name input field -->
+            <input type="text" placeholder="Phone Number"> <!-- Phone Number input field -->
+
+            <div class="btn-box"> <!-- Button container -->
+                <button type="button" id="back2">Back</button> <!-- Button to go back to Step 2 -->
+                <button type="button" id="submit">Submit</button> <!-- Button to submit the form -->
+            </div>
+        </form>
+
+        <!-- Step Indicator Section -->
+        <div class="step-row">
+            <div id="progress"></div> <!-- Progress bar -->
+            <div class="step-col"><small>Step 1</small></div> <!-- Step 1 Indicator -->
+            <div class="step-col"><small>Step 2</small></div> <!-- Step 2 Indicator -->
+            <div class="step-col"><small>Step 3</small></div> <!-- Step 3 Indicator -->
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Linking external JavaScript file -->
+</body>
+</html>
