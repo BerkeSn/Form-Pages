@@ -55,6 +55,34 @@ form input {
     background-color: transparent;
 }
 
+.com {
+    width: 100%;
+    position: relative;
+    padding-top: 5px;
+}
+
+.com label{
+    position: absolute;
+    font-size: 14px;
+    color: #777;
+}
+
+.com input:placeholder-shown ~ label{
+    top: 15px;
+    left: 2px;
+    font-size: 14px;
+    color: #777;
+    transition: 0.3s all;
+    cursor:text;
+}
+
+.com input:focus ~ label{
+    top: 3px;
+    left: -1px;
+    color: #512b81;
+    border-bottom-color: #512b81;
+}
+
 /* Placeholder styling */
 ::placeholder{
     color: #777;
