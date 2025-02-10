@@ -13,9 +13,19 @@
         <!-- Step 1: Account Creation Form -->
         <form id="form1">
             <h3>Create Account</h3>
-            <input type="text" placeholder="Username"> <!-- Username input field -->
-            <input type="password" placeholder="Password"> <!-- Password input field -->
-            <input type="password" placeholder="Confirm Password"> <!-- Confirm Password input field -->
+            <div class="com">
+                <input type="text" placeholder="" id="username"> <!-- Username input field -->
+                <label for="username">Username</label>
+            </div>
+            <div class="com">
+                <input type="password" placeholder="" id="pass1"> <!-- Password input field -->
+                <label for="pass1">Password</label>
+            </div>
+
+            <div class="com">
+                <input type="password" placeholder="" id="pass2"> <!-- Confirm Password input field -->
+                <label for="pass2">Confirm Password</label>
+            </div>
 
             <div class="btn-box"> <!-- Button container -->
                 <button type="button" id="next1">Next</button> <!-- Button to go to Step 2 -->
@@ -25,9 +35,20 @@
         <!-- Step 2: Additional Information Form -->
         <form id="form2">
             <h3>Additional Information</h3>
-            <input type="text" placeholder="E-Mail"> <!-- Email input field -->
-            <input type="text" placeholder="LinkedIn"> <!-- LinkedIn profile input field -->
-            <input type="text" placeholder="GitHub"> <!-- GitHub profile input field -->
+            <div class="com">
+                <input type="text" placeholder="" id="mail"> <!-- Email input field -->
+                <label for="mail">E-mail</label>
+            </div>
+
+            <div class="com">
+                <input type="text" placeholder="" id="LinkedIn"> <!-- LinkedIn profile input field -->
+                <label for="LinkedIn">LinkedIn</label>
+            </div>
+            
+            <div class="com">
+                <input type="text" placeholder="" id="github"> <!-- GitHub profile input field -->
+                <label for="github">Github</label>
+            </div>
 
             <div class="btn-box"> <!-- Button container -->
                 <button type="button" id="back1">Back</button> <!-- Button to go back to Step 1 -->
@@ -38,9 +59,20 @@
         <!-- Step 3: Personal Details Form -->
         <form id="form3">
             <h3>Personal Details</h3>
-            <input type="text" placeholder="First Name"> <!-- First Name input field -->
-            <input type="text" placeholder="Last Name"> <!-- Last Name input field -->
-            <input type="text" placeholder="Phone Number"> <!-- Phone Number input field -->
+            <div class="com">
+                <input type="text" id="name" placeholder=""> <!-- First Name input field -->
+                <label for="name">First Name</label>
+            </div>
+
+            <div class="com">
+                <input type="text" id="lname" placeholder=""> <!-- Last Name input field -->
+                <label for="lname">Surname</label>
+            </div>
+
+            <div class="com">
+                <input type="text" placeholder="" id="number"> <!-- Phone Number input field -->
+                <label for="number">Phone Number</label>
+            </div>
 
             <div class="btn-box"> <!-- Button container -->
                 <button type="button" id="back2">Back</button> <!-- Button to go back to Step 2 -->
